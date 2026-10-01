@@ -230,7 +230,7 @@ class App(tk.Tk):
         # Sin columna de código: el nombre completo importa más que el
         # código de barras aquí, y el buscador ya filtra por ambos.
         marco_catalogo, tabla_catalogo = self._tabla_con_scroll(
-            cuerpo, ("producto", "precio", "stock"), (220, 80, 70), height=6
+            cuerpo, ("producto", "precio", "stock"), (220, 80, 70), height=4
         )
         marco_catalogo.pack(fill="both", expand=True, padx=10, pady=(2, 8))
         tabla_catalogo.column("producto", anchor="w")
@@ -238,7 +238,7 @@ class App(tk.Tk):
         # --- Carrito de la venta en curso.
         tk.Label(cuerpo, text="Carrito:", font=("Segoe UI", 9, "bold")).pack(anchor="w", padx=10)
         marco_carrito, tabla = self._tabla_con_scroll(
-            cuerpo, ("cant", "producto", "precio", "total"), (50, 190, 80, 90), height=6
+            cuerpo, ("cant", "producto", "precio", "total"), (50, 190, 80, 90), height=4
         )
         marco_carrito.pack(fill="both", expand=True, padx=10, pady=(2, 6))
         tabla.column("producto", anchor="w")
