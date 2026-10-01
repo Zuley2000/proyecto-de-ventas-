@@ -69,7 +69,7 @@ class App(tk.Tk):
         ancho_pantalla = self.winfo_screenwidth()
         alto_pantalla = self.winfo_screenheight()
         ancho = min(980, ancho_pantalla)
-        alto = min(680, alto_pantalla)
+        alto = min(580, alto_pantalla)
         self.geometry(f"{ancho}x{alto}+0+0")
         self.minsize(min(320, ancho), min(480, alto))
 
